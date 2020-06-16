@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 32%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: lightgrey;
+  margin: 5px;
+  border:1px solid black;
+  display: table-cell;
+
+}
+.column2 {
+  float: left;
+  width: 32%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: lightgrey;
+  margin: 5px;
+  border:1px solid black;
+   display: table-cell;
+
+}
+.column3 {
+  float: left;
+  width: 32%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: lightgrey;
+  margin: 5px;
+  border:1px solid black;
+   display: table-cell;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 991px) {
+  .column1  {
+    width: 48%;
+  
+  }
+    .column2  {
+    width: 48%;
+  
+  }
+    .column3  {
+    width: 97%;
+    
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767px) {
+  .column1  {
+    width: 100%;
+    margin: 5px;
+  }
+  .column2  {
+    width: 100%;
+    margin: 5px;
+  }
+  .column3  {
+    width: 100%;
+    margin: 5px;
+  }
+}
+#cen{
+  text-align: center;
+}
+#ah2{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  position: relative;
+  display: inline;
+  color: blue;
+  float: right;
+  top: 0px;
+  margin-top: 0px;
+  background-color: orange;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin-right: -9px;
+  margin-top: 1px;
+}
+#bh2{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  position: relative;
+  display: inline;
+  color: red;
+  float: right;
+  margin-top: 0px;
+  background-color:yellow ;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin-right: -9px;
+  margin-top: 1px;
+}
+#ch2{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  position: relative;
+  display: inline;
+  color: purple;
+  float: right;
+  margin-top: 0px;
+  background-color: lightgreen;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin-right: -9px;
+  margin-top: 1px;
+  
+
+}
